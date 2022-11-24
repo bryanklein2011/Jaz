@@ -335,7 +335,7 @@ a.back-to-top:hover, a.back-to-top:focus {
 }
 
 .counter-section {
-  background: url(../img/jasmine.jpg);
+  background: url(../img/background/bg-1.jpg);
   overflow: hidden;
   position: relative;
 }
@@ -708,10 +708,8 @@ a.back-to-top:hover, a.back-to-top:focus {
 3. Hero Area
 ========================================================================== */
 .hero-area-bg {
-  background: url(../img/jasmine.jpg) no-repeat;
+  background: url(../img/hero-area.jpg) no-repeat;
   background-size: cover;
-  overflow: hidden;
-  position: relative;
 }
 
 #hero-area {
@@ -1130,3 +1128,58 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 #copyright p a:hover {
   color: #00b4d9;
 }
+
+.bslider {
+  position: relative;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+}
+
+.bslide-track {
+  width: calc(500px * 8);
+  display: flex;
+  animation: scroll 50s linear infinite;
+  justify-content: space-between;
+}
+
+.freeze {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+
+.bslide {
+  width: 400px;
+  height: 350px;
+  overflow: hidden;
+  background-position: top;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: orangered;
+  font-size: 20px;
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.freeze:hover .bslide {
+  filter: blur(3px);
+}
+.freeze .bslide:hover {
+  filter: none;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(calc(-200px * 10));
+  }
+}
+
+
