@@ -710,6 +710,9 @@ a.back-to-top:hover, a.back-to-top:focus {
 .hero-area-bg {
   background: url(../img/jasmine.jpg) no-repeat;
   background-size: cover;
+  overflow: hidden;
+  position: relative;
+}
 }
 
 #hero-area {
