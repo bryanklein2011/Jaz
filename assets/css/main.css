@@ -1130,7 +1130,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 }
 
 .bslider {
-  position: relative;
+  position: center;
   width: 100%;
   display: grid;
   place-items: center;
@@ -1139,7 +1139,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
 
 .bslide-track {
   width: calc(500px * 8);
-  display: flex;
+  display: inline-flex;
   animation: scroll 50s linear infinite;
   justify-content: space-between;
 }
@@ -1157,7 +1157,7 @@ a:not([href]):not([tabindex]):focus, a:not([href]):not([tabindex]):hover {
   overflow: hidden;
   background-position: top;
   background-size: cover;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   justify-content: center;
   color: orangered;
